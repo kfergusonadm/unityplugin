@@ -101,7 +101,7 @@ namespace Apple.GameKit
         private static void OnAuthenticate(long taskId, IntPtr pointer)
         {
             _local = new GKLocalPlayer(pointer);
-            InteropTasks.TrySetResultAndRemove(taskId, _local);
+            //InteropTasks.TrySetResultAndRemove(taskId, _local);
         }
 
         [MonoPInvokeCallback(typeof(NSErrorTaskCallback))]
