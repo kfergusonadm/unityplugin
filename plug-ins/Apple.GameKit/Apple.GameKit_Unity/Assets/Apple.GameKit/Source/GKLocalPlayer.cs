@@ -107,7 +107,7 @@ namespace Apple.GameKit
         [MonoPInvokeCallback(typeof(NSErrorTaskCallback))]
         private static void OnAuthenticateError(long taskId, IntPtr errorPointer)
         {
-            InteropTasks.TrySetExceptionAndRemove<GKLocalPlayer>(taskId, new GameKitException(errorPointer));
+            //InteropTasks.TrySetExceptionAndRemove<GKLocalPlayer>(taskId, new GameKitException(errorPointer));
         }
         #endregion
         
