@@ -108,6 +108,7 @@ namespace Apple.GameKit
         private static void OnAuthenticateError(long taskId, IntPtr errorPointer)
         {
             InteropTasks.TrySetExceptionAndRemove<GKLocalPlayer>(taskId, new GameKitException(errorPointer));
+            _local = null;
         }
         #endregion
         
